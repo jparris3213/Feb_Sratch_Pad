@@ -2,9 +2,9 @@
 const express = require("express");
 const path = require("path");
 const { ApolloServer } = require("apollo-server-express");
-const db = require("../../threejs_Test/server/config/connection");
-const { typeDefs, resolvers } = require("../../threejs_Test/server/schemas");
-const { authMiddleware } = require("../../threejs_Test/server/utils/auth")
+const db = require("./config/connection");
+const { typeDefs, resolvers } = require("./schemas");
+const { authMiddleware } = require("./utils/auth")
 const app = express();
 const PORT = process.env.PORT || 3001;
 
